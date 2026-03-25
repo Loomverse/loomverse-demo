@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loomverse Demo</title>
+    <script src="./script.js" defer></script>
+    <!-- CSS -->
+    <style scoped>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        
+        .loading__page {
+            margin: auto;
+            text-align: center;
+            padding: 5rem;
+        }
+        
+        #play-button {
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            background-color: #f7cc31;
+            color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        /* GAME SCENE */
+        
+        .game__scene {
+            margin: auto;
+            display: none;
+            text-align: center;
+        }
+        
+        .scene {
+            background-color: #333;
+            width: 100%;
+            height: 100%;
+            max-width: 1200px;
+            min-height: 300px;
+        }
+        #scene-image {
+            margin: auto;
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+        }
+
+
+
+        /* ===== GLOBAL BUTTON STYLE ===== */
+button {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.9rem 1.3rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+
+    background-color: #1e1e1e;
+    color: #ffffff;
+
+    transition: all 0.18s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* ===== HOVER ===== */
+button:hover {
+    background-color: #2a2a2a;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== ACTIVE (CLICK) ===== */
+button:active {
+    transform: translateY(0);
+    background-color: #151515;
+}
+
+/* ===== FOCUS ===== */
+button:focus {
+    outline: none;
+}
+
+button:focus-visible {
+    outline: 2px solid #f7cc31;
+    outline-offset: 2px;
+}
+
+/* ===== PLAY BUTTON (PRIMARY ACTION) ===== */
+#play-button {
+    background-color: #f7cc31;
+    color: #222;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+}
+
+#play-button:hover {
+    background-color: #e6bb2c;
+}
+
+/* ===== CHOICES CONTAINER ===== */
+.choices {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* ===== CHOICE BUTTONS ===== */
+.choices button {
+    width: 100%;
+    text-align: left;
+    background-color: #2b2b2b;
+}
+
+.choices button:hover {
+    background-color: #3a3a3a;
+}
+    </style>
+</head>
+
+<body>
+    <div class="loading__page">
+        <h1>Loomverse Demo</h1>
+        <p>Developed by Salih Khan - <a href="https://salihkhan.me">salihkhan.me</a></p>
+        <p>Story made by Maryam Ali and me</p>
+        <button id="play-button">Play</button>
+    </div>
+
+    <div class="game__scene">
+        <h1 id="title"></h1>
+        <img id="scene-image" src="#" alt="">
+        <p class="scene-description"></p>
+
+        <div class="choices">
+            <!-- for buttons to be dynamically created -->
+        </div>
+    </div>
+
+</body>
+
+</html>
