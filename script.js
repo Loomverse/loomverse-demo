@@ -155,7 +155,7 @@ const gameObject = [{ // END OF ARRAY
             name: '',
             id: "win3",
             description: '...',
-            image: './assets/win/win3.png',
+            image: './assets/win/win_unique.png',
             choices: [{
                 text: 'Play Again',
                 nextScene: 'first_scene'
@@ -187,7 +187,7 @@ const gameObject = [{ // END OF ARRAY
             name: 'A cowards win..',
             id: "win2",
             description: '',
-            image: './assets/win/win2.png',
+            image: './assets/win/win_selfish.png',
             choices: [{
                 text: 'Play Again',
                 nextScene: 'first_scene'
