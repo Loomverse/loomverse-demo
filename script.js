@@ -131,7 +131,7 @@ const gameObject = [{ // END OF ARRAY
             name: 'What next?',
             id: "blank",
             description: 'You killed a guardian keeping darker things at bay. You survive albeit others that pass through will not due to your actions...',
-            image: '../assets/black.webp',
+            image: '../assets/black.png',
             choices: [{
                     text: 'Next',
                     nextScene: 'win2'
@@ -141,7 +141,7 @@ const gameObject = [{ // END OF ARRAY
             name: 'What next?',
             id: "blank2",
             description: 'You took the safest option in all this. Although the night was uncomfortable you are atleast alive!',
-            image: '../assets/black copy.webp',
+            image: '../assets/black copy.png',
             choices: [{
                     text: 'Next',
                     nextScene: 'win1'
@@ -151,7 +151,7 @@ const gameObject = [{ // END OF ARRAY
             name: '',
             id: "win2",
             description: '',
-            image: './assets/win/win2.png',
+            image: '../assets/win/win2.png',
             choices: [{
                     text: 'Play Again',
                     nextScene: 'first_scene'
@@ -161,7 +161,7 @@ const gameObject = [{ // END OF ARRAY
             name: '',
             id: "win1",
             description: '',
-            image: './assets/win/win1.png',
+            image: '../assets/win/win1.png',
             choices: [{
                     text: 'Play Again',
                     nextScene: 'first_scene'
