@@ -148,7 +148,7 @@ const gameObject = [{ // END OF ARRAY
             }]
         },
         {
-            name: '',
+            name: 'A cowards win..',
             id: "win2",
             description: '',
             image: './assets/win/win2.png',
